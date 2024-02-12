@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Homeicon } from "../../Icons";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
       style={{ backgroundColor: "#d1f076" }}
     >
       <Link to="/">
-        <button>Home</button>
+        <button><Homeicon /></button>
       </Link>
 
       <div className="lg:hidden">
